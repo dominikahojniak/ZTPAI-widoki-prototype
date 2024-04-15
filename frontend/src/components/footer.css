@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+.footer-id {
+    background-color: #0B0C0B;
+    width: 100vw;
+    height: 10vh; 
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Ustawienie pozycji sticky */
+    bottom: 0;
+    box-shadow: 0 -1px 1px #000000;
+}
+.footer-id .footer-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin-left: 1%;
+}
+.footer-id li {
+    display: inline;
+    margin-right: 100px;
+    font-family:'Frank Ruhl Libre',serif;
+    font-size:20px;
+    font-weight: 400;
+}
+.footer-id .footer-list li a {
+    text-decoration: none;
+    color: #D2CBC1;
+}
+.media-footer{
+    margin-right: 1%;
+}
+@media (max-width: 400px) {
+    .footer-id {
+    display: none;
+    }
+
+}
