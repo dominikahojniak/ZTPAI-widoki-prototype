@@ -6,29 +6,13 @@ import greenPremieres from './img/green-premieres.svg';
 import toRead from './img/toRead.svg';
 import search from './img/search.svg';
 import profile from './img/profile.svg';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer.jsx';
+import Header from './components/Header/Header.jsx';
 import './premieres.css'; 
 const Premieres = () => {
     return (
         <div className="premieres-container">
-            <nav className="nav-premieres">
-                <ul>
-                    <li>
-                        <div className="images-container-premieres">
-                            <img src={malelogo} alt="Male Logo" />
-                        </div>
-                    </li>
-                    <li><a href="home"><img src={home} alt="Home" />Home</a></li>
-                    <li><a href="premieres" className="Navpremieres"><img src={greenPremieres} alt="Premieres" />Premieres</a></li>
-                    <li><a href="toRead"><img src={toRead} alt="To Read" />To Read</a></li>
-                    <li><a href="search"><img src={search} alt="Search" />Search</a></li>
-                    <li><a href="profile"><img src={profile} alt="Profile" />Profile</a></li>
-                    <div className="loginsignup">
-                        <a href="login.html">Log In</a>
-                        <a href="signup.html" id="signup-link">Sign Up</a>
-                    </div>
-                </ul>
-            </nav>
+            <Header activePage="premieres" />
             <main>
                 <div className="premieres">
                     Premieres
@@ -55,7 +39,7 @@ const Premieres = () => {
                     
                 </div>
             </main>
-            <Footer />
+            <Footer showProfileAndHello={false}/>
         </div>
     );
 }

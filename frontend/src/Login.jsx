@@ -1,12 +1,12 @@
 import React from 'react';
 import './login.css'; 
 import mobilelogo from './img/malelogo.png';
-import Footer from './components/Footer';
-import NavigationBefore from './components/NavigationBefore';
+import Footer from './components/Footer/Footer.jsx';
+import Header from './components/Header/Header.jsx';
 const Login = () => {
     return (
         <div className="login-container">
-            <NavigationBefore />
+            <Header activePage="logsign" />
             <main className='login-main'>
                 <div className="login">
                     <form className="form">
@@ -21,14 +21,14 @@ const Login = () => {
                             <div id='donthaveanaccount' className='donthaveanaccount'>
                                 Don't have an account?
                             </div>
-                            <a href="signup.html" className='signup'>
+                            <a href="signup" className='signup'>
                                 Sign Up
                             </a>
                         </div>
                     </form>
                 </div>
             </main>
-            <Footer />
+            <Footer showProfileAndHello={false}/>
         </div>
     );
 }

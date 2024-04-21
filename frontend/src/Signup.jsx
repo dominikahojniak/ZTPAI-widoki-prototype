@@ -1,17 +1,17 @@
 import React from 'react';
 import './signup.css'; 
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer.jsx';
 import mobilelogo from './img/malelogo.png';
-import NavigationBefore from './components/NavigationBefore';
+import Header from './components/Header/Header.jsx';
 const SignUp = () => {
     return (
         <div className="signup-container">
-            <NavigationBefore />
+              <Header activePage="logsign" />
             <main className="signup-main">
                 <div className="signup">
                     <form className="form">
                         <div className="form-login">
-                            <p id="changeToLogin"><a href="login.html">Login</a></p>
+                            <p id="changeToLogin"><a href="login">Login</a></p>
                         </div>
                         <h1 id="signup-title">Sign Up</h1>
                         <div className="logoPhoto">

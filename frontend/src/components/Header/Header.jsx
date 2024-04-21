@@ -1,0 +1,41 @@
+import React from 'react';
+import './header.css';
+import malelogo from '../../img/malelogo.png';
+import greenHome from '../../img/green-home.svg';
+import greenPremieres from '../../img/green-premieres.svg';
+import home from '../../img/home.svg';
+import premieres from '../../img/premieres.svg';
+import toRead from '../../img/toRead.svg';
+import search from '../../img/search.svg';
+import profile from '../../img/profile.svg';
+
+const Header = ({ activePage }) => {
+const isLogSignPage = activePage === 'logsign';
+const headerClass = isLogSignPage ? 'header-nav logsign-page' : 'header-nav';
+const isHomePage = activePage === 'home';
+const homeImage = isHomePage ? greenHome : home;
+const isPremieresPage = activePage === 'premieres';
+const premieresImage = isPremieresPage ? greenPremieres : premieres;
+  return (
+    <nav className={headerClass}>
+      <ul>
+        <li>
+          <div className="images-container">
+            <img src={malelogo} alt="logo" />
+          </div>
+        </li>
+        <li><a href="home" className={activePage === 'home' ? 'active' : ''}><img src={homeImage} alt="Home" />Home</a></li>
+        <li><a href="premieres" className={activePage === 'premieres' ? 'active' : ''}><img src={premieresImage} alt="Premieres" />Premieres</a></li>
+        <li><a href="toRead" className={activePage === 'toRead' ? 'active' : ''}><img src={toRead} alt="To Read" />To Read</a></li>
+        <li><a href="search" className={activePage === 'search' ? 'active' : ''}><img src={search} alt="Search" />Search</a></li>
+        <li><a href="profile" className={activePage === 'profile' ? 'active' : ''}><img src={profile} alt="Profile" />Profile</a></li>
+        <div className="loginsignup">
+          <a href="login">Log In</a>
+          <a href="signup" id="signup-link">Sign Up</a>
+        </div>
+      </ul>
+    </nav>
+  );
+};
+
+export default Header;
