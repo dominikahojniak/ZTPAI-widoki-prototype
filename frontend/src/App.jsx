@@ -5,7 +5,7 @@ import Home from './Home.jsx';
 import Login from './Login.jsx';
 import SignUp from './Signup.jsx';
 import Premieres from './Premieres.jsx';
-// import Habit from './Habit.jsx';
+import Search from './Search.jsx';
 const App = () => {
     return (
         <Router>
@@ -15,10 +15,7 @@ const App = () => {
                 <Route exact path="/login" element={<Login/>}/>
                 <Route exact path="/signup" element={<SignUp/>} />
                 <Route exact path="/premieres" element={<Premieres/>} />
-                {/* <Route exact path="/login" element={<Login/>} />
-                <Route exact path="/signup" element={<SignUp/>} />
-                <Route exact path="/premieres" element={<Premieres/>} />
-                <Route exact path="/habit" element={<Habit/>} /> */}
+                <Route exact path="/search" element={<Search/>} />
             </Routes>
         </Router>
     );
