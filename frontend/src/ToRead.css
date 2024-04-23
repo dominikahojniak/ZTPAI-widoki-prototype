@@ -1,15 +1,14 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
 
 /*naglowek*/
 /*srodek*/
-.premieres-container{
+.toread-container{
     height: 100vh;
     width: 100vw;
     margin-top: 0;
     overflow-y: auto;
 }
-.main-premieres{
+.main-toread{
     margin-top: 10vh;
     min-height: 80vh;
     flex-shrink: 0;
@@ -19,6 +18,7 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: start;
     align-items: center;
     flex-direction: column;
@@ -26,7 +26,7 @@ body{
     min-height: 100vh;
     overflow-y: auto;
 }
-.premieres{
+.toRead{
     font-family: 'Frank Ruhl Libre', serif;
     color: #D2CBC1;
     font-weight: 400;
@@ -36,13 +36,14 @@ body{
     width: calc(100vw - 30rem);
     margin: 0 auto;
 }
-.news-premieres{
+
+.news-toread{
     display: flex;
     width: calc(100vw - 30rem);
     height: auto;
     overflow-y: auto; 
-    gap: 1rem;
     flex-direction: column;
+    gap: 1rem;
     justify-content: flex-start;
     margin-left: auto;
     margin-right: auto;
@@ -51,32 +52,25 @@ body{
 
 /*stopka*/
 @media (max-width: 900px) {
+
     body{
-        width: 100%;
+        width: 100vw;
     }
-    .premieres{
-        width: 100%;
-        margin: 0;
-    }
-    .loginsignup {
-        display: none;
-    }
-    .news-premieres{
-        width: 100%;
-        height: auto;
-        margin-left: 0px;
-        margin-bottom: 10vh;
-    }
-    li a {
-        margin-left: 10px;
-    }
-    .right{
-        width: 50%;
-    }
-    .main-premieres{
+   .main-toread{
         height: auto;
         margin-bottom: calc(10vh + 10px);
         margin-top: 5vh;
-        width: 100%;
+        width: calc(100vw - 1px);
     }
+    .toRead{
+        width: 100%;
+        margin: 0;
+    }
+    .news-toread{
+        width: calc(100vw - 1px);
+        min-height: calc(100% + 1px);
+        margin-bottom: 10vh;
+        flex-shrink: 0;
+    }
+  
 }

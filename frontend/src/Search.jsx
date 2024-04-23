@@ -7,7 +7,7 @@ const Search = () => {
   return (
     <div className="search-container">
        <Header activePage="search" />
-      <main>
+      <main className='main-search'>
         <div className="search">Search</div>
        <Searching/>
       </main>

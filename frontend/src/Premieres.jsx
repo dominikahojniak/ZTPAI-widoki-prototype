@@ -8,11 +8,13 @@ const Premieres = () => {
     return (
         <div className="premieres-container">
             <Header activePage="premieres" />
-            <main>
+            <main className='main-premieres'>
                 <div className="premieres">
                     Premieres
                 </div>
                 <div className="news-premieres">
+                <BookInfoPremieres date="Date 1" title="Title 1" imageSrc={okladka} />
+                <BookInfoPremieres date="Date 1" title="Title 1" imageSrc={okladka} />
                 <BookInfoPremieres date="Date 1" title="Title 1" imageSrc={okladka} />
                 <BookInfoPremieres date="Date 1" title="Title 1" imageSrc={okladka} />
                 <BookInfoPremieres date="Date 1" title="Title 1" imageSrc={okladka} />

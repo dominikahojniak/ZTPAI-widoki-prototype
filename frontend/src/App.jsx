@@ -6,6 +6,8 @@ import Login from './Login.jsx';
 import SignUp from './Signup.jsx';
 import Premieres from './Premieres.jsx';
 import Search from './Search.jsx';
+import ToRead from './ToRead.jsx';
+import Profile from './Profile.jsx';
 const App = () => {
     return (
         <Router>
@@ -16,6 +18,8 @@ const App = () => {
                 <Route exact path="/signup" element={<SignUp/>} />
                 <Route exact path="/premieres" element={<Premieres/>} />
                 <Route exact path="/search" element={<Search/>} />
+                <Route exact path="/toRead" element={<ToRead/>} />
+                <Route exact path="/profile" element={<Profile/>} />
             </Routes>
         </Router>
     );
